@@ -29,7 +29,7 @@ const Body = () => {
   const classes = useStyles();
   useEffect(() => {
     let get = async () => {
-      let res = await axios.get("http://localhost:3001/api/goods");
+      let res = await axios.get("http://localhost:4001/api/goods");
       //console.log(res.data.result);
       setGoods(res.data.result);
     };

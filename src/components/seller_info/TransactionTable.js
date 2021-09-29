@@ -1,7 +1,19 @@
+import TextField from "@mui/material/TextField";
 const TransactionTable = () => {
   return (
     <div>
-      <h1>hi</h1>
+      <p>
+        user id :{" "}
+        <TextField
+          id="outlined-basic"
+          label="input user id"
+          variant="outlined"
+        />
+      </p>
+      <p>
+        xpub :{" "}
+        <TextField id="outlined-basic" label="input xpub" variant="outlined" />
+      </p>
     </div>
   );
 };

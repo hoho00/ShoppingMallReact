@@ -16,7 +16,7 @@ const GoodsTable = () => {
   const [goods, setGoods] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      await axios.get("http://localhost:3001/api/goods/").then((e) => {
+      await axios.get("http://localhost:4001/api/transaction/").then((e) => {
         setGoods(e.data.result);
         console.log(e.data.result);
       });
